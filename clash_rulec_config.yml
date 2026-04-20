@@ -49,6 +49,9 @@ dns:
 
   # 按域名类别分流 DNS
   nameserver-policy:
+    "geosite:google":
+      - https://dns.google/dns-query
+      - https://1.1.1.1/dns-query
     "geosite:cn,private":
       - https://dns.alidns.com/dns-query
       - https://doh.pub/dns-query
